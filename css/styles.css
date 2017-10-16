@@ -67,6 +67,10 @@ input[type="checkbox"]:checked ~ nav a:hover{
     cursor: pointer;
 }
 label{
+animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+animation-direction: alternate;
     display:block;
     background:black;
     width:40px;
@@ -95,20 +99,31 @@ html{
   height:100%;
 }
 
-
-
-
-
 header{
   position: relative;
+  height: 15px;
+  background: black;
 }
 
+
+section{
+  height:100%;
+  width: 90%;
+  position: absolute;
+  top: 5%;
+  left: 100px;
+  background: white;
+  display: flex;
+ border: 3px solid #73AD21;
+}
+
+
+
 footer{
-  height: 100px;
+  height: 10%;
   position: absolute;
   bottom: 0;
   background:black;
-
-	width:100%;
+  width:100%;
 
 }
