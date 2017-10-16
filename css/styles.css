@@ -1,0 +1,99 @@
+
+h1, p, li{
+    color:#222;
+    margin:0 0 1em;
+}
+
+.wrapper{
+    overflow:hidden;
+}
+
+nav{
+    position:fixed;
+    top:10;
+    left:0;
+    width:250px;
+    height:100%;
+    margin:0 0 0 -250px;
+
+}
+nav ul{
+    width:250px;
+    height:197px;
+    padding:50;
+    margin:50;
+    list-style:none;
+    background:#222;
+    overflow:hidden;
+}
+nav li{
+    margin:0;
+}
+nav a{
+    padding:50;
+    color:#fff;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    letter-spacing:2px;
+    border-bottom:1px solid #333;
+}
+nav a:hover{
+    background:red;
+}
+label{
+    display:block;
+    background:black;
+    width:40px;
+    height:40px;
+    color:white;
+    text-align:center;
+    font-size:2em;
+    position:fixed;
+    top:10px;
+    left:10px;
+
+    z-index:500;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav{
+    margin:0;
+}
+
+input[type="checkbox"]:checked ~ section{
+}
+
+
+
+html{
+  height:100%;
+}
+ 
+body{
+  height:100%;
+  position: relative;
+      padding:0;
+    margin:0;
+}
+ 
+
+ 
+header{
+  position: relative;
+}
+
+footer{
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background:black;
+
+	width:100%;
+
+}
+
+
+
