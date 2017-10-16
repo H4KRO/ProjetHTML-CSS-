@@ -1,10 +1,10 @@
 @keyframes color_change
     {
-      0%   {background: #3D9970;}
-      25%  {background: #FF851B;}
-      50%  {background: #FF4136;}
-      75%  {background: #39CCCC;}
-      100% {background: #3D9970;}
+      0%   {background: #3D9970; oppacity: 0.5;}
+      25%  {background: #FF851B; oppacity: 0.5;}
+      50%  {background: #FF4136; oppacity: 0.5;}
+      75%  {background: #39CCCC; oppacity: 0.5;}
+      100% {background: #3D9970; oppacity: 0.5;}
     }
 
 body {
