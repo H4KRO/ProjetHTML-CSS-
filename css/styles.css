@@ -1,4 +1,3 @@
-
 h1, p, li{
     color:#222;
     margin:0 0 1em;
@@ -95,5 +94,19 @@ footer{
 
 }
 
+@font-face 
+{
+    font-family: "CaviarDreams";
+
+    src: url("CaviarDreams.ttf") format("truetype");
+
+}
 
 
+
+div 
+{
+
+    font-family: "CaviarDreams",arial,sans-serif;
+
+}
