@@ -1,23 +1,20 @@
 @keyframes color_change
     {
-      0%   {background: #3D9970; oppacity: 0.5;}
-      25%  {background: #FF851B; oppacity: 0.5;}
-      50%  {background: #FF4136; oppacity: 0.5;}
-      75%  {background: #39CCCC; oppacity: 0.5;}
-      100% {background: #3D9970; oppacity: 0.5;}
+      0%   {background: #3D9970;}
+      25%  {background: #FF851B;}
+      50%  {background: #FF4136;}
+      75%  {background: #39CCCC;}
+      100% {background: #3D9970;}
     }
 
+
 body {
-	animation-name: color_change;
-	animation-duration: 15s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  background-image: url(pattern-1.png);
+	background-repeat:repeat-y-x;
   height:100%;
   position: relative;
   padding:0;
   margin:0;
-  	background-image: url(pattern-1.png);
-	background-repeat:repeat-y-x;
 }
 
 h1, p, li{
@@ -67,6 +64,7 @@ nav a {
 
 input[type="checkbox"]:checked ~ nav a:hover{
     background:red;
+    cursor: pointer;
 }
 label{
     display:block;
