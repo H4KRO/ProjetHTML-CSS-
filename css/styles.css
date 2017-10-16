@@ -58,7 +58,12 @@ nav a{
     letter-spacing:2px;
     border-bottom:1px solid #333;
 }
-nav a:hover{
+
+nav a {
+  cursor: default;
+}
+
+input[type="checkbox"]:checked ~ nav a:hover{
     background:red;
 }
 label{
@@ -75,14 +80,13 @@ label{
 
     z-index:500;
 }
+
 input[type="checkbox"]{
     display:none;
 }
+
 input[type="checkbox"]:checked ~ nav{
     margin:0;
-}
-
-input[type="checkbox"]:checked ~ section{
 }
 
 
