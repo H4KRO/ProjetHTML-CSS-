@@ -1,5 +1,6 @@
-@keyframes color_change
+@keyframes color_change/*changement de couleur*/
     {
+		
       0%   {background: #3D9970;}
       25%  {background: #FF851B;}
       50%  {background: #FF4136;}
@@ -7,47 +8,27 @@
       100% {background: #3D9970;}
     }
 
-
-body {
-  background-image: url(pattern-1.png);
-	background-repeat:repeat-y-x;
-  height:100%;
-  position: relative;
-  padding:0;
-  margin:0;
-}
-
-h1, p, li{
-    color:#222;
-    margin:0 0 1em;
-}
-
-.wrapper{
-    overflow:hidden;
-}
-
-nav{
-    position:fixed;
-    top:10;
-    left:0;
-    width:250px;
-    height:100%;
+nav{/*gère la colonne nav*/
+    position:fixed; 
     margin:0 0 0 -250px;
+	display: inline;
+	top:20px;
+    z-index: 560;
 
 }
-nav ul{
-    width:250px;
-    height:197px;
+nav ul{ /*Structure du menu*/
+    width:15em;
+    height:11em;
     padding:50;
     margin:50;
     list-style:none;
     background:#222;
-    overflow:hidden;
+    overflow:hidden;/*disparait quand trop grand*/
 }
 nav li{
     margin:0;
 }
-nav a{
+nav a{ /*Liens du menu*/
     padding:50;
     color:#fff;
     font-family:'helvetica neue', helvetica, arial, sans-serif;
@@ -56,23 +37,19 @@ nav a{
     padding:12px 15px;
     letter-spacing:2px;
     border-bottom:1px solid #333;
+	  cursor: default;
 }
-
-nav a {
-  cursor: default;
-}
-
-input[type="checkbox"]:checked ~ nav a:hover{
+input[type="checkbox"]:checked ~ nav a:hover{/*affichage quand on passe la souris*/
     background:red;
-    cursor: pointer;
+    cursor: pointer; 
 }
-label{
-animation-name: color_change;
+label{/*case menu burger*/
+	/*changement de couleur*/
+    animation-name: color_change;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
-animation-direction: alternate;
-    display:block;
-    background:black;
+    animation-direction: alternate;
+	
     width:40px;
     height:40px;
     color:white;
@@ -81,49 +58,74 @@ animation-direction: alternate;
     position:fixed;
     top:10px;
     left:10px;
-
-    z-index:500;
+	    border-radius: 20px;
 }
-
-input[type="checkbox"]{
+input[type="checkbox"]{ /*permet de ne pas afficher la vraie checkbox (qui fait tache)*/
     display:none;
+	
 }
-
-input[type="checkbox"]:checked ~ nav{
+input[type="checkbox"]:checked ~ nav{ /*affiche le menu quand le bouton est on*/
     margin:0;
+	
 }
 
-
-
-html{
-  height:100%;
-}
 
 header{
-  position: relative;
-  height: 15px;
-  background: black;
-}
-
-
-section{
-  height:100%;
-  width: 90%;
-  position: absolute;
-  top: 5%;
-  left: 100px;
-  background: white;
+	padding:25px 20px;/*Marge verticale*/
+	background-color:black; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
+} 
+ 
+#content{
+  background-image: url(pattern-1.png);/*Couleur de fond*/
   display: flex;
- border: 3px solid #73AD21;
+  flex-direction: column;
 }
-
-
-
+ 
 footer{
-  height: 10%;
-  position: absolute;
-  bottom: 0;
-  background:black;
-  width:100%;
+	padding:25px 20px;/*Marge verticale*/
+	background-color:black; /*Couleur de fond*/
+	text-align:center;/*texte centré*/
+	display: flex;
+	color: white;
+}
+ 
+
+body{
+	padding: 0;
+	margin: 0;
+}
+ 
+section{
+	width:80%;/*Taille de la colonne centrée moins le padding*/
+	background-color:#FFFFFF;/*Couleur de fond*/
+	margin : 10px 60px;/*centrer la colone*/
+	display: flex;
+	align-items: center;
+    border-radius: 10px;
+	
+	
+	animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
 
 }
+article{
+	position: sticky;
+	top: 30px;
+	background-color:#FFFFFF;/*Couleur de fond*/
+	margin : 10px 10px;/*centrer la colone*/
+	padding:25px;/*margin interne*/
+	display: flex;
+	align-items: center;
+    border-radius: 10px;
+
+}
+
+#media{
+}
+#foot{
+}
+
+
