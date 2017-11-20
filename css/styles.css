@@ -103,8 +103,9 @@ body{
 	margin: 0;
 }
  
-section{
+section{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
+	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 70px ;/*centrer la colone*/
 	display: flex;
@@ -123,27 +124,37 @@ article{
 	top: 3px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 10px;/*centrer la colone*/
-	padding:25px;/*margin interne*/
+	padding: 25px;/*margin interne*/
 	align-items: center;
     border-radius: 10px;
 
 }
 
-aside{
+aside{ /*MODIFIE*/
 position: absolute;
-right: 0px;
+right: -10px;
 top: 85px;
 width: 23%;
-background-color: rgba(81, 82, 99, 0.79);
-    overflow:hidden;
-	padding: 15px;
-	    border-radius: 10px;
-		color: white;
+background-color: rgba(81, 82, 99, 0.89);
+overflow:hidden;
+padding: 15px;
+border-radius: 10px;
+color: white;
 }
+
+@media (max-width: 620px) { /*MODIFIE*/
+ aside {
+ display: none;
+ }
+ section {
+ width: 90%;
+ min-width: 200px;
+ margin : 10px 5% ;
+ }
+}
+
 
 #media{
 }
 #foot{
 }
-
-
