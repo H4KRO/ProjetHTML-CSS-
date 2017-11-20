@@ -119,12 +119,12 @@ section{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
-	margin : 10px 70px ;/*centrer la colone*/
+	margin : 10px 5% ;/*centrer la colone*/
 	display: flex;
 	align-items: center;
     border-radius: 20px;
-
-
+	
+	
 	animation-name: color_change;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
@@ -159,6 +159,13 @@ color: white;
  aside {
  display: none;
  }
+ section {
+ width: 93%;
+ min-width: 200px;
+ margin : 10px 5% ;
+ }
+}
+
 
 #media{
 }
