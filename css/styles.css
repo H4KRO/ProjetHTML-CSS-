@@ -166,6 +166,14 @@ color: white;
  }
 }
 
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("CaviarDreams.ttf") format("truetype");
+}
+
+div {
+    font-family: "CaviarDreams",arial,sans-serif;
+}
 
 #media{
 }
