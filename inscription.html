@@ -9,85 +9,90 @@
 	</head>
 
 	<body>
-		
+		<header>Rejoind nous !!</header>
 		<main>
+			<article>
 			<form action="sendToMySecondYearInIut.php" method="post">
 				<fieldset>
-					<legend>Informations personnelles</legend>
+					<legend>Civilité</legend>
 					<p>
 						<label for="surname">Nom*</label>
 						<input id="surname" name="uname" type="text" required autofocus>
 					</p>
 					<p>
-						<label for="firstname">Prénom</label>
+						<label for="firstname">Prénom*</label>
 						<input id="firstname" name="firstname" type="text">
 					</p>
 					<p>
-						<label for="gender">Sexe</label>
-						<input name="gender" value="male" type="radio"> Homme<br>
+						<label for="gender">Sexe*</label>
+						<input name="gender" value="male" type="radio"> Homme
 						<input name="gender" value="female" type="radio"> Femme
 					</p>
 					<p>
-						<label for="bday">Date d'anniversaire</label>
-						<input id="bday" name="bday" type="date">
+						<label for="bday">Date de naissance*</label>
+						<input id="bday" name="bday" type="date" required placeholder="JJ/MM/AAAA">
 					</p>
 					<p>
 						<label for="email">Email*</label>
-						<input id="email" name="email" type="email" required placeholder="yourmail@domain.com">
-					</p>
-					<p>
-						<label for="land">Pays d’origine : </label>
-						<select id="land">
-							<option value="us">U.S.A</option> 
-							<option value="fr" selected>France</option>
-							<option value="ch">Chine</option>
-							<option value="vn">Viêt Nem</option>
-							<option value="vn">caca de chameau</option>
-						</select>
+						<input id="email" name="email" type="email" required placeholder="tonmail@mail.com">
 					</p>
 				</fieldset>
 				
 				<fieldset>
-					<legend>les habits</legend>
+					<legend>Adresse</legend>
 					<p>
-						<label for="fighting">types préférés : </label>
-						<select id="fighting" multiple>
-							<option value="kungfu">T Shirt</option> 
-							<option value="karate" selected>Sneakers</option>
-							<option value="fullcontact">sweat</option>
-						</select>
+						<label for="lland">Adresse</label>
+						<input id="adresse" name="adresse" type="text" required placeholder="N°rue,avenue">
 					</p>
 					<p>
-						<label for="level">ma connaissance en sape sur 100</label>
-						<input id="level" name="level" type="number" min="0" max="100">
-					</p>
-				</fieldset>
-				
-				<fieldset>
-					<legend>Inscription</legend>
-					<p>
-						<label for="password">mot de passe*</label>
-						<input id="password" name="password" type="password" required pattern="[a-z0-9A-B]{8,}">
+						<label for="lland1">Complément d'adresse</label>
+						<input id="lland1" name="lland1" type="text" required placeholder="Appartement, Rez de chaussé">
+						<input id="lland1" name="lland1" type="text" required placeholder="Batiment, Résidence">
 					</p>
 					<p>
-						<label for="engagement">Niveau d’engagement</label>
-						<input name="engagement" value="basic" type="radio">Free (gratuit)<br>
-						<input name="engagement" value="basic" type="radio">Basique (5 €)<br>
-						<input name="engagement" value="gold" type="radio">Gold (15 €)<br>
-						<input name="engagement" value="tatane" type="radio">diamond (50 €)
+						<label for="lland2">Ville</label>
+						<input id="lland2" name="lland2" type="text" required placeholder="Montpellier">
 					</p>
 					<p>
-						<label for="message">Message pour les développeurs: </label>
+						<label for="lland3">Code Postal</label>
+						<input id="lland3" name="lland3" type="number">
 						
+					</p>
+					<p>
+						<label for="lland4">Pays</label>
+						<input id="lland4" name="lland4" type="text"> 
+					</p>
+				</fieldset>
+				
+					
+				<fieldset>
+					<legend>Fais nous savoir tes remarques !</legend>
+					
+					<p>
+						<label for="product">Que penses-tu de notre produit ?</label>
+						<select id="product" >
+							<option value="1">Nul</option> 
+							<option value="2">Passable</option>
+							<option value="3">Sans avis</option>
+							<option value="4">Bien</option>
+							<option value="5">Super !</option>
+						</select>
+					</p>
+					
+					<p>
+						<textarea>Message pour les développeurs: </textarea>
+						
+					
 					</p>
 							
 					<p>
-						<input name="agree" type="checkbox" required>J’ai bien lu les clauses que je n’ai pas lues
+						<input name="agree" type="checkbox" required> J’ai bien lu et accepté les clauses de politique de confidentialité de l'entreprise.
 					</p>
 				</fieldset>
 
 				<input type="submit" value="Envoyer">
 			</form>
+			</article>
 		</main>
 		
 		<footer>
