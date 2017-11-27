@@ -42,6 +42,96 @@ footer{
     color: white;
 }
 
+aside{ /*MODIFIE*/
+    position: absolute;
+    right: 0px;
+    top: 85px;
+    width: 23%;
+    background-color: rgba(81, 82, 99, 0.89);
+    overflow:hidden;
+    padding: 15px;
+    border-radius: 15px 50px;
+    color: white;
+    }
+
+article{
+    position: sticky;
+    top: 3px;
+    background-color:#FFFFFF;/*Couleur de fond*/
+    margin : 10px 10px;/*centrer la colone*/
+    padding:25px;/*margin interne*/
+    align-items: center;
+    border-radius: 10px;
+}
+
+section{ /*MODIFIE*/
+	width:65%;/*Taille de la colonne centrée moins le padding*/
+	min-width: 300px;
+	background-color:#FFFFFF;/*Couleur de fond*/
+	margin : 10px 5% ;/*centrer la colone*/
+	display: flex;
+	align-items: center;
+    border-radius: 20px;
+	
+	
+	animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes color_change/*changement de couleur*/
+{
+
+  0%   {background: #3D9970;}
+  25%  {background: #FF851B;}
+  50%  {background: #FF4136;}
+  75%  {background: #39CCCC;}
+  100% {background: #3D9970;}
+}
+#wrapper{
+position: sticky;
+top: 20px;
+}
+
+nav > #menu{ /*gère la colonne nav > #menu*/
+position:fixed;
+margin:0 0 0 -235px;
+display: inline;
+top:35px;
+z-index: 560;
+
+
+}
+nav > #menu ul{ /*Structure du menu*/
+width:250px;
+height: 195px;
+list-style:none;
+background:#222;
+overflow:hidden;/*disparait quand trop grand*/
+border-radius: 10px;
+}
+
+nav > #menu li{
+margin:0;
+}
+
+nav > #menu a{ /*Liens du menu*/
+padding:50;
+color:#fff;
+font-family:'helvetica neue', helvetica, arial, sans-serif;
+text-decoration:none;
+display:block;
+padding:12px 15px;
+letter-spacing:2px;
+border-bottom:1px solid #333;
+  cursor: default;
+}
+input[type="checkbox"]:checked ~ nav > #menu > #menu a:hover{/*affichage quand on passe la souris*/
+background: red;
+cursor: pointer;
+}
+
+
 @font-face {
     font-family: "CaviarDreams";
     src: url("CaviarDreams.ttf") format("truetype");
