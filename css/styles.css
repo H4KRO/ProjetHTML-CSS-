@@ -101,13 +101,7 @@ header{
   flex-direction: column;
 }
 
-footer{
-	padding:25px 20px;/*Marge verticale*/
-	background-color:black; /*Couleur de fond*/
-	text-align:center;/*texte centré*/
-	display: flex;
-	color: white;
-}
+
 
 
 body{
@@ -129,7 +123,12 @@ section{ /*MODIFIE*/
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
     animation-direction: alternate;
+}
 
+h1{
+  font-size: 20;
+  text-align: center;
+  
 }
 
 article{
@@ -140,7 +139,6 @@ article{
 	padding:25px;/*margin interne*/
 	align-items: center;
     border-radius: 10px;
-
 }
 
 aside{ /*MODIFIE*/
@@ -175,7 +173,29 @@ div {
     font-family: "CaviarDreams",arial,sans-serif;
 }
 
+/* MODIFIEEEEEEEEEEEEEEEEEEEEEEEE*/
+
 #media{
+right: 10px;
+display: flex;
+position: absolute;
+right: 20 px;
 }
-#foot{
+
+#media > a > img{
+width: 40px; 
+height: 40px;
+padding: 5px;
+}
+#media > a > img:hover{
+width: 50px; 
+height: 50px;
+padding: 0px;
+}
+
+footer{
+	padding:25px 20px;/*Marge verticale*/
+	background-color:black; /*Couleur de fond*/
+	display: block;
+	color: white;
 }
