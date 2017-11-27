@@ -1,0 +1,22 @@
+header {
+    padding: 25px 20px; 
+    background-color: black;
+    text-align : center;
+    color: white; 
+}
+
+body {
+    font-family: "CaviarDreams",arial,sans-serif;
+    padding: 0;
+	margin: 0;
+}
+
+legend {
+    color: rgb(207, 165, 48);
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("CaviarDreams.ttf") format("truetype");
+}
