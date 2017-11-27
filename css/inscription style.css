@@ -16,6 +16,32 @@ legend {
     font-size: 20px;
 }
 
+#media{
+    right: 10px;
+    display: flex;
+    position: absolute;
+    right: 20 px;
+}
+    
+#media > a > img{
+    width: 40px; 
+    height: 40px;
+    padding: 5px;
+}
+
+#media > a > img:hover{
+    width: 50px; 
+    height: 50px;
+    padding: 0px;
+}
+    
+footer{
+    padding:25px 20px;/*Marge verticale*/
+    background-color:black; /*Couleur de fond*/
+    display: block;
+    color: white;
+}
+
 @font-face {
     font-family: "CaviarDreams";
     src: url("CaviarDreams.ttf") format("truetype");
