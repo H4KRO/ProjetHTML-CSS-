@@ -140,16 +140,26 @@ article{
 	align-items: center;
     border-radius: 10px;
 }
+article > img {
+width: 300px; 
+height: 300px;
+float: right;
+}
+
+.grand {
+width: 100%; 
+
+}
 
 aside{ /*MODIFIE*/
 position: absolute;
-right: -10px;
+right: 0px;
 top: 85px;
 width: 23%;
 background-color: rgba(81, 82, 99, 0.89);
 overflow:hidden;
 padding: 15px;
-border-radius: 10px;
+border-radius: 15px 50px;
 color: white;
 }
 
@@ -162,6 +172,12 @@ color: white;
  min-width: 200px;
  margin : 10px 5% ;
  }
+ article > img {
+width: 300px; 
+height: 300px;
+margin: auto;
+display: block
+}
 }
 
 @font-face {
