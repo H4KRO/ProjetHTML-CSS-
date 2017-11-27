@@ -21,6 +21,11 @@ nav > #menu{ /*gère la colonne nav > #menu*/
 
 
 }
+
+.submenu{
+display: hidden;
+} 
+
 nav > #menu ul{ /*Structure du menu*/
   width:250px;
   height: 195px;
@@ -101,13 +106,7 @@ header{
   flex-direction: column;
 }
 
-footer{
-	padding:25px 20px;/*Marge verticale*/
-	background-color:black; /*Couleur de fond*/
-	text-align:center;/*texte centré*/
-	display: flex;
-	color: white;
-}
+
 
 
 body{
@@ -115,12 +114,12 @@ body{
 	margin: 0;
 }
 
-section{
+section{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 5% ;/*centrer la colone*/
-	display: block;
+	display: inline;
 	align-items: center;
     border-radius: 20px;
 	
@@ -129,10 +128,14 @@ section{
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
     animation-direction: alternate;
-
 }
 
-article{  /* Modifié par eddie */
+h1{
+  font-size: 20;
+  text-align: center; 
+}
+
+article{  
 	top: 3px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 10px;/*centrer la colone*/
@@ -141,29 +144,55 @@ article{  /* Modifié par eddie */
     border-radius: 10px;
 
 }
+.droite { 
+width: 300px; 
+height: 300px;
+float: right;
+}
 
-aside{ 
+.gauche { 
+width: 300px; 
+height: 300px;
+float: left;
+}
+
+.grand {
+width: 100%; 
+border: 3px black solid;
+}
+
+aside{ /*FAQ*/
 position: absolute;
-right: -10px;
+right: -100px;
 top: 85px;
 width: 23%;
 background-color: rgba(81, 82, 99, 0.89);
 overflow:hidden;
 padding: 15px;
-border-radius: 10px;
+border-radius: 15px 50px;
 color: white;
+}
+
+aside:hover{
+right: 0px;
+
 }
 
 @media (max-width: 620px) { /*MODIFIE*/
  aside {
  display: none;
  }
- 
  section {
  width: 93%;
  min-width: 200px;
  margin : 10px 5% ;
  }
+ article > img {
+width: 300px; 
+height: 300px;
+margin: auto;
+display: block
+}
 }
 
 @font-face {
@@ -175,7 +204,29 @@ div {
     font-family: "CaviarDreams",arial,sans-serif;
 }
 
+/* MODIFIEEEEEEEEEEEEEEEEEEEEEEEE*/
+
 #media{
+right: 10px;
+display: flex;
+position: absolute;
+right: 20 px;
 }
-#foot{
+
+#media > a > img{
+width: 40px; 
+height: 40px;
+padding: 5px;
+}
+#media > a > img:hover{
+width: 50px; 
+height: 50px;
+padding: 0px;
+}
+
+footer{
+	padding:25px 20px;/*Marge verticale*/
+	background-color:black; /*Couleur de fond*/
+	display: block;
+	color: white;
 }
