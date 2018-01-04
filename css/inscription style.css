@@ -12,7 +12,7 @@ body {
 }
 
 legend {
-    color: rgb(207, 165, 48);
+    color: black;
     font-size: 20px;
 }
 
@@ -36,16 +36,16 @@ legend {
 }
     
 footer{
-    padding:25px 20px;/*Marge verticale*/
+    padding:25px;/*Marge verticale*/
     background-color:black; /*Couleur de fond*/
     display: block;
     color: white;
 }
 
-aside{ /*MODIFIE*/
+aside{ /*FAQ*/
     position: absolute;
     right: 0px;
-    top: 85px;
+    top: 90px;
     width: 23%;
     background-color: rgba(81, 82, 99, 0.89);
     overflow:hidden;
@@ -54,17 +54,8 @@ aside{ /*MODIFIE*/
     color: white;
     }
 
-article{
-    position: sticky;
-    top: 3px;
-    background-color:#FFFFFF;/*Couleur de fond*/
-    margin : 10px 10px;/*centrer la colone*/
-    padding:25px;/*margin interne*/
-    align-items: center;
-    border-radius: 10px;
-}
 
-section{ /*MODIFIE*/
+fieldset{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
@@ -131,8 +122,71 @@ background: red;
 cursor: pointer;
 }
 
+div.wrapper > label{/*case menu burger*/
+	/*changement de couleur*/
+  animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
 
+  width:40px;
+  height:40px;
+  color:white;
+  text-align:center;
+  font-size:2em;
+  position:fixed;
+  top:20px;
+  left:20px;
+	z-index: 562;
+    border-radius: 10px;
+}
+input[type="checkbox"]{ /*permet de ne pas afficher la vraie checkbox (qui fait tache)*/
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav > #menu{ /*affiche le menu quand le bouton est on*/
+  margin:0 0 0 -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:not(:checked) ~ nav > #menu { /*affiche le menu quand le bouton est on*/
+  margin:0 0 0 -235px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
 @font-face {
     font-family: "CaviarDreams";
     src: url("CaviarDreams.ttf") format("truetype");
+}
+
+    
+    @media (max-width: 620px) { /*MODIFIE*/
+     aside {
+     display: none;
+     }
+     section {
+     width: 93%;
+     min-width: 200px;
+     margin : 10px 5% ;
+     }
+     article > img {
+    width: 300px; 
+    height: 300px;
+    margin: auto;
+    display: block
+    }
+}
+form{
+    background-image: url(pattern-1.png);/*Couleur de fond*/
+    display: flex;
+    flex-direction: column;
+}
+
+#ok {
+    display :inline;
+}
+
+textarea {
+    width : 800px;
+    height : 200px;
 }

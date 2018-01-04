@@ -115,7 +115,7 @@ body{
 }
 
 section{ /*MODIFIE*/
-	width:65%;/*Taille de la colonne centrée moins le padding*/
+	widows: 65px;;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 5% ;/*centrer la colone*/

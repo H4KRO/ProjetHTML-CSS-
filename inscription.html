@@ -35,8 +35,8 @@
 		<header>Rejoins nous !!</header>
 		<main>
 			<section>
-			<article>
-			<form action="sendToMySecondYearInIut.php" method="post">
+			
+			<form action="sendToMySecondYearInIut.php" method="get">
 				<fieldset>
 					<legend>Civilité</legend>
 					<p>
@@ -75,16 +75,16 @@
 					</p>
 					<p>
 						<label for="lland2">Ville</label>
-						<input id="lland2" name="lland2" type="text" required placeholder="Montpellier">
+						<input id="lland2" name="lland2" type="text" required placeholder="Ex : Montpellier">
 					</p>
 					<p>
 						<label for="lland3">Code Postal</label>
-						<input id="lland3" name="lland3" type="number">
+						<input id="lland3" name="lland3" type="number" required placeholder="Ex : 34090">
 						
 					</p>
 					<p>
 						<label for="lland4">Pays</label>
-						<input id="lland4" name="lland4" type="text"> 
+						<input id="lland4" name="lland4" type="text" required placeholder="Ex : France"> 
 					</p>
 				</fieldset>
 				
@@ -105,16 +105,15 @@
 					
 					<p>
 						<textarea>Message pour les développeurs: </textarea>
-						
-					
 					</p>
 							
 					<p>
-						<input name="agree" type="checkbox" required> J’ai bien lu et accepté les clauses de politique de confidentialité de l'entreprise.
+						<input id="ok" type="checkbox" value="required"> J’ai bien lu et accepté les clauses de politique de confidentialité de l'entreprise.
 					</p>
+					<input type="submit" value="Envoyer">
 				</fieldset>
 
-				<input type="submit" value="Envoyer">
+				
 			</form>
 			<aside>
 					<h1>FAQ</h1>
@@ -122,8 +121,8 @@
 				<p>Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.</p>
 				 <p>Et prima post Osdroenam quam, ut dictum est, ab hac descriptione discrevimus, Commagena, nunc Euphratensis, clementer adsurgit, Hierapoli, vetere Nino et Samosata civitatibus amplis inlustris.
 		
-			</aside>
-		</article>
+			</aside> 
+		
 	</section>
 		</main>
 		
