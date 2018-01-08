@@ -9,18 +9,22 @@
     }
 #wrapper{
 	position: sticky;
-	top: 20px;
 }
 
 nav > #menu{ /*gère la colonne nav > #menu*/
   position:fixed;
   margin:0 0 0 -235px;
 	display: inline;
-	top:35px;
+	top:200px;
   z-index: 560;
 
 
 }
+
+.submenu{
+display: hidden;
+} 
+
 nav > #menu ul{ /*Structure du menu*/
   width:250px;
   height: 195px;
@@ -62,7 +66,7 @@ label{/*case menu burger*/
   text-align:center;
   font-size:2em;
   position:fixed;
-  top:20px;
+  top:180px;
   left:20px;
 	z-index: 562;
 	border-radius: 10px;
@@ -90,10 +94,25 @@ input[type="checkbox"]:not(:checked) ~ nav > #menu { /*affiche le menu quand le 
 
 
 header{
-	padding:25px 20px;/*Marge verticale*/
-	background-color:black; /*Couleur de fond*/
-	text-align:center;/*texte centré*/
+		height: 200px;
+	  max-height: 200px;
+	  position: relative;
+    overflow: hidden;
 }
+
+
+
+
+.titre {
+  color: White;
+  font-size: 6em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
 
 #content{
   background-image: url(pattern-1.png);/*Couleur de fond*/
@@ -110,11 +129,11 @@ body{
 }
 
 section{ /*MODIFIE*/
-	width:65%;/*Taille de la colonne centrée moins le padding*/
+	widows: 65px;;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 5% ;/*centrer la colone*/
-	display: flex;
+	display: inline;
 	align-items: center;
     border-radius: 20px;
 	
@@ -127,41 +146,58 @@ section{ /*MODIFIE*/
 
 h1{
   font-size: 20;
-  text-align: center;
-  
+  text-align: center; 
 }
 
-article{
-	position: sticky;
+article{  
 	top: 3px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 10px;/*centrer la colone*/
 	padding:25px;/*margin interne*/
 	align-items: center;
     border-radius: 10px;
+
+}
+.droite { 
+width: 300px; 
+height: 300px;
+float: right;
 }
 
-aside{ /*MODIFIE*/
-position: absolute;
+.gauche { 
+width: 300px; 
+height: 300px;
+float: left;
+}
+
+.grand {
+width: 100%; 
+border: 3px black solid;
+}
+
+
+
+aside:hover{
 right: 0px;
-top: 85px;
-width: 23%;
-background-color: rgba(81, 82, 99, 0.89);
-overflow:hidden;
-padding: 15px;
-border-radius: 15px 50px;
-color: white;
+
 }
 
 @media (max-width: 620px) { /*MODIFIE*/
- aside {
- display: none;
- }
+header > img{
+	min-width: 300px;
+	min-height: 300px;
+}
  section {
  width: 93%;
  min-width: 200px;
  margin : 10px 5% ;
  }
+ article > img {
+width: 300px; 
+height: 300px;
+margin: auto;
+display: block
+}
 }
 
 @font-face {
