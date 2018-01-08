@@ -58,17 +58,13 @@ aside{ /*FAQ*/
 fieldset{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
-	background-color:#FFFFFF;/*Couleur de fond*/
+	background-image: url(Décoformulaire.png);
 	margin : 10px 5% ;/*centrer la colone*/
 	display: flex;
 	align-items: center;
     border-radius: 20px;
 	
 	
-	animation-name: color_change;
-	animation-duration: 15s;
-	animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 @keyframes color_change/*changement de couleur*/
 {
@@ -188,5 +184,5 @@ form{
 
 textarea {
     width : 800px;
-    height : 200px;
+    height : 175px;
 }
