@@ -58,7 +58,8 @@ aside{ /*FAQ*/
 fieldset{ /*MODIFIE*/
 	width:65%;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
-	background-image: url(Décoformulaire.png);
+    background-image: url(Décoformulaire.png);
+    background-size:cover;
 	margin : 10px 5% ;/*centrer la colone*/
 	display: flex;
 	align-items: center;
