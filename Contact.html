@@ -1,20 +1,21 @@
-<!DOCTYPE HTML>
+	<!DOCTYPE html>
+
 <html>
-<head>
-<title>NewTextile Corp - Contact</title>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-		 <link rel="icon" type="image/png" href="icon.png" />
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>NewTextile Corp - Produits</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" type="image/png" href="icon.png" />
 
-<body>
-
-	
-	 <header>
+	</head>
+	<header>
 		<img src="img2.jpg" style="width:100%">
 		<div class="titre">Nous Contacter</div>
 	</header>
-     <div class="wrapper">
+
+	<body>
+		<div class="wrapper">
 			<input type="checkbox" id="navigation" />
 			<label for="navigation">☰</label>
 			<nav>
@@ -43,37 +44,108 @@
 				
 			</div>
 		</nav>
-
-
-	<div id="content" >
-		<section>
-		<article>
-			<h1>Bienvenue chez New Textile Corp</h1>
-        <p>Quam quidem partem accusationis admiratus sum et moleste tuli potissimum esse Atratino datam. Neque enim decebat neque aetas illa postulabat neque, id quod animadvertere poteratis, pudor patiebatur optimi adulescentis in tali illum oratione versari. Vellem aliquis ex vobis robustioribus hunc male dicendi locum suscepisset; aliquanto liberius et fortius et magis more nostro refutaremus istam male dicendi licentiam. Tecum, Atratine, agam lenius, quod et pudor tuus moderatur orationi meae et meum erga te parentemque tuum beneficium tueri debeo.</p>
-        <p>Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis ad nocendum per clandestinos versutosque rumigerulos conpertis leviter addere quaedam male suetos falsa et placentia sibi discentes, adfectati regni vel artium nefandarum calumnias insontibus adfligebant.</p>
-         <p>Et prima post Osdroenam quam, ut dictum est, ab hac descriptione discrevimus, Commagena, nunc Euphratensis, clementer adsurgit, Hierapoli, vetere Nino et Samosata civitatibus amplis inlustris.
-         <p></p>
-          
-          <p>Adolescebat autem obstinatum propositum erga haec et similia multa scrutanda, stimulos admovente regina, quae abrupte mariti fortunas trudebat in exitium praeceps, cum eum potius lenitate feminea ad veritatis humanitatisque viam reducere utilia suadendo deberet, ut in Gordianorum actibus factitasse Maximini truculenti illius imperatoris rettulimus coniugem.</p>
-          <p>Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs perspicabilis hanc condidisse Perseus memoratur, Iovis filius et Danaes, vel certe ex Aethiopia profectus Sandan quidam nomine vir opulentus et nobilis et Anazarbus auctoris vocabulum referens, et Mopsuestia vatis illius domicilium Mopsi, quem a conmilitio Argonautarum cum aureo vellere direpto redirent, errore abstractum delatumque ad Africae litus mors repentina consumpsit, et ex eo cespite punico tecti manes eius heroici dolorum varietati medentur plerumque sospitales.</p>
-         		 <p>Illud tamen clausos vehementer angebat quod captis navigiis, quae frumenta vehebant per flumen, Isauri quidem alimentorum copiis adfluebant, ipsi vero solitarum rerum cibos iam consumendo inediae propinquantis aerumnas exitialis horrebant. </p>
-    	</article>
-		</section><!-- #centercolumn -->
 		
-		
-		
-    </div><!-- #content -->
+		<main>
+			
+			
+			<form action="sendToMySecondYearInIut.php" method="get">
+				<fieldset>
+					<legend>Civilité</legend>
+					<p>
+						<label for="surname">Nom*</label>
+						<input id="surname" name="uname" type="text" required autofocus>
+					</p>
+					<p>
+						<label for="firstname">Prénom*</label>
+						<input id="firstname" name="firstname" type="text">
+					</p>
+					<p>
+						<label for="gender">Sexe*</label>
+						<input name="gender" value="male" type="radio"> Homme
+						<input name="gender" value="female" type="radio"> Femme
+					</p>
+					<p>
+						<label for="bday">Date de naissance*</label>
+						<input id="bday" name="bday" type="date" required placeholder="JJ/MM/AAAA">
+					</p>
+					<p>
+						<label for="email">Email*</label>
+						<input id="email" name="email" type="email" required placeholder="tonmail@mail.com">
+					</p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Adresse</legend>
+					<p>
+						<label for="lland">Adresse</label>
+						<input id="adresse" name="adresse" type="text" required placeholder="N°rue,avenue">
+					</p>
+					<p>
+						<label for="lland1">Complément d'adresse</label>
+						<input id="lland1" name="lland1" type="text" required placeholder="Appartement, Rez de chaussé">
+						<input id="lland1" name="lland1" type="text" required placeholder="Batiment, Résidence">
+					</p>
+					<p>
+						<label for="lland2">Ville</label>
+						<input id="lland2" name="lland2" type="text" required placeholder="Ex : Montpellier">
+					</p>
+					<p>
+						<label for="lland3">Code Postal</label>
+						<input id="lland3" name="lland3" type="number" required placeholder="Ex : 34090">
+						
+					</p>
+					<p>
+						<label for="lland4">Pays</label>
+						<input id="lland4" name="lland4" type="text" required placeholder="Ex : France"> 
+					</p>
+				</fieldset>
+				
+					
+				<fieldset>
+					<legend>Comment avez-vous entendu parler de nous ?</legend>
+					
+					<p>
+						<label for="product">Vous avez entendu parler de nous via</label>
+						<select id="product" >
+							<option value="1">Facebook</option> 
+							<option value="2">votre entourage</option>
+							<option value="3">des publicités</option>
+							<option value="4">des Blogs</option>
+							<option value="5">des commerciaux</option>
+						</select>
+					</p>
+					<p>
+						<label for="rday">Date à laquelle vous voulez être recontacté</label>
+						<input id="rday" name="rday" type="date" required placeholder="JJ/MM/AAAA">
+					</p>
+					<p>
+						<textarea>Message pour les développeurs: </textarea>
+					</p>
+							
+					<p>
+						<input id="ok" type="checkbox" value="required"> J’ai bien lu et accepté les clauses de politique de confidentialité de l'entreprise.
+					</p>
+					<input type="submit" value="Envoyer">
+				</fieldset>
 
-	<footer>
-    	<div id="media">
-        <a href="https://www.twitter.com"><img src="twitter.png" alt="PTwitt"/></a>
-        <a href="https://www.facebook.com"><img src="facebook.png" alt="facebook" /></a>
-        <a href="https://www.gmail.com"><img src="gmail.png" alt="gmail" /></a>
-        </div>
-		<div id="foot">
-        NewTextile Corporation 2017 all rights reserved 
-        </div>
-    </footer>
+				
+			</form> 
+		
 
-</body>
+		</main>
+		
+		<footer>
+			<div id="media">
+				<a href="https://www.twitter.com"><img src="twitter.png" alt="PTwitt"/></a>
+				<a href="https://www.facebook.com"><img src="facebook.png" alt="facebook" /></a>
+				<a href="https://www.gmail.com"><img src="gmail.png" alt="gmail" /></a>
+			</div>
+			<div id="foot">
+				NewTextile Corporation 2017 all rights reserved 
+			</div>
+		</footer>
+	</body>
 </html>
+
+
+

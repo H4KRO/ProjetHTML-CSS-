@@ -51,7 +51,7 @@ nav > #menu a{ /*Liens du menu*/
 	  cursor: default;
 }
 
-label{/*case menu burger*/
+div.wrapper > label{/*case menu burger*/
 	/*+changement de couleur*/
   animation-name: color_change;
 	animation-duration: 15s;
@@ -127,7 +127,7 @@ body{
 }
 
 section{ /*MODIFIE*/
-	widows: 65px;;/*Taille de la colonne centrée moins le padding*/
+	widows: 65px;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 5% ;/*centrer la colone*/
@@ -234,6 +234,36 @@ footer{
 	color: white;
 }
 
+legend {
+  color: black;
+  font-size: 20px;
+}
 
+fieldset{ /*MODIFIE*/
+	width:65%;/*Taille de la colonne centrée moins le padding*/
+    min-width: 300px;
+    background-color: #39CCCC;
+	margin : 10px 5% ;/*centrer la colone*/
+	display: flex;
+	align-items: center;
+      border-radius: 10px;
+      border-color: white;
+		
+}
+
+form{
+  background-image: url(pattern-1.png);/*Couleur de fond*/
+  display: flex;
+  flex-direction: column;
+}
+
+#ok {
+  display :inline;
+}
+
+textarea {
+  width : 800px;
+  height : 175px;
+}
 
 
