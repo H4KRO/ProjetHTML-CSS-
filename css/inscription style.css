@@ -1,0 +1,188 @@
+header {
+    padding: 25px 20px; 
+    background-color: black;
+    text-align : center;
+    color: white; 
+}
+
+body {
+    font-family: "CaviarDreams",arial,sans-serif;
+    padding: 0;
+	margin: 0;
+}
+
+legend {
+    color: black;
+    font-size: 20px;
+}
+
+#media{
+    right: 10px;
+    display: flex;
+    position: absolute;
+    right: 20 px;
+}
+    
+#media > a > img{
+    width: 40px; 
+    height: 40px;
+    padding: 5px;
+}
+
+#media > a > img:hover{
+    width: 50px; 
+    height: 50px;
+    padding: 0px;
+}
+    
+footer{
+    padding:25px;/*Marge verticale*/
+    background-color:black; /*Couleur de fond*/
+    display: block;
+    color: white;
+}
+
+aside{ /*FAQ*/
+    position: absolute;
+    right: 0px;
+    top: 90px;
+    width: 23%;
+    background-color: rgba(81, 82, 99, 0.89);
+    overflow:hidden;
+    padding: 15px;
+    border-radius: 15px 50px;
+    color: white;
+    }
+
+
+fieldset{ /*MODIFIE*/
+	width:65%;/*Taille de la colonne centrée moins le padding*/
+	min-width: 300px;
+    background-image: url(Décoformulaire.png);
+    background-size:cover;
+	margin : 10px 5% ;/*centrer la colone*/
+	display: flex;
+	align-items: center;
+    border-radius: 20px;
+	
+	
+}
+@keyframes color_change/*changement de couleur*/
+{
+
+  0%   {background: #3D9970;}
+  25%  {background: #FF851B;}
+  50%  {background: #FF4136;}
+  75%  {background: #39CCCC;}
+  100% {background: #3D9970;}
+}
+#wrapper{
+position: sticky;
+}
+
+nav > #menu{ /*gère la colonne nav > #menu*/
+position:fixed;
+margin:0 0 0 -235px;
+display: inline;
+top:35px;
+z-index: 560;
+
+
+}
+nav > #menu ul{ /*Structure du menu*/
+width:250px;
+height: 195px;
+list-style:none;
+background:#222;
+overflow:hidden;/*disparait quand trop grand*/
+border-radius: 10px;
+}
+
+nav > #menu li{
+margin:0;
+}
+
+nav > #menu a{ /*Liens du menu*/
+padding:50;
+color:#fff;
+font-family:'helvetica neue', helvetica, arial, sans-serif;
+text-decoration:none;
+display:block;
+padding:12px 15px;
+letter-spacing:2px;
+border-bottom:1px solid #333;
+  cursor: default;
+}
+input[type="checkbox"]:checked ~ nav > #menu > #menu a:hover{/*affichage quand on passe la souris*/
+background: red;
+cursor: pointer;
+}
+
+div.wrapper > label{/*case menu burger*/
+	/*changement de couleur*/
+  animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  width:40px;
+  height:40px;
+  color:white;
+  text-align:center;
+  font-size:2em;
+  position:fixed;
+  top:20px;
+  left:20px;
+	z-index: 562;
+    border-radius: 10px;
+}
+input[type="checkbox"]{ /*permet de ne pas afficher la vraie checkbox (qui fait tache)*/
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav > #menu{ /*affiche le menu quand le bouton est on*/
+  margin:0 0 0 -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:not(:checked) ~ nav > #menu { /*affiche le menu quand le bouton est on*/
+  margin:0 0 0 -235px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("CaviarDreams.ttf") format("truetype");
+}
+
+    
+    @media (max-width: 620px) { /*MODIFIE*/
+     aside {
+     display: none;
+     }
+     section {
+     width: 93%;
+     min-width: 200px;
+     margin : 10px 5% ;
+     }
+     article > img {
+    width: 300px; 
+    height: 300px;
+    margin: auto;
+    display: block
+    }
+}
+form{
+    background-image: url(pattern-1.png);/*Couleur de fond*/
+    display: flex;
+    flex-direction: column;
+}
+
+#ok {
+    display :inline;
+}
+
+textarea {
+    width : 800px;
+    height : 175px;
+}

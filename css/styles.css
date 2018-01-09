@@ -1,0 +1,269 @@
+@keyframes color_change/*changement de couleur*/
+    {
+
+      0%   {background: #3D9970;}
+      25%  {background: #FF851B;}
+      50%  {background: #FF4136;}
+      75%  {background: #39CCCC;}
+      100% {background: #3D9970;}
+    }
+#wrapper{
+	position: sticky;
+}
+
+nav > #menu{ /*gère la colonne nav > #menu*/
+  position:fixed;
+  margin:0 0 0 -235px;
+	display: inline;
+	top:200px;
+  z-index: 560;
+
+
+}
+
+.submenu{
+display: hidden;
+} 
+
+nav > #menu ul{ /*Structure du menu sous forme de liste*/
+  width:250px;
+  height: 256px;
+  list-style:none;
+  background:#222;
+  overflow:hidden;/*disparait quand trop grand*/
+  border-radius: 10px;
+}
+input[type="checkbox"]:checked ~ nav > #menu li :hover{ /* quand on passe la souris sur le menu+ checkbox on*/
+	background: black;
+	cursor: pointer;
+}
+
+
+nav > #menu a{ /*Liens du menu*/
+    padding:50px;
+    color:#fff;
+    font-family:'helvetica neue', helvetica, arial, sans-serif;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    letter-spacing:2px;
+    border-bottom:1px solid #333;
+	  cursor: default;
+}
+
+div.wrapper > label{/*case menu burger*/
+	/*+changement de couleur*/
+  animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  width:40px;
+  height:40px;
+  color:white;
+  text-align:center;
+  font-size:2em;
+  position:fixed;
+  top:180px;
+  left:20px;
+	z-index: 562;
+	border-radius: 10px;
+}
+input[type="checkbox"]{ /*permet de ne pas afficher la vraie checkbox (qui fait tache)*/
+    display:none;
+}
+input[type="checkbox"]:checked ~ nav > #menu{ /*affiche le menu quand le bouton est on*/
+  margin:0 0 0 -20px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+
+input[type="checkbox"]:not(:checked) ~ nav > #menu { /*retire le menu quand le bouton est off*/
+  margin:0 0 0 -240px;
+  transition-property: margin;
+  transition-duration: 0.5s;
+}
+
+/* Sous menu Beta ! */
+
+
+
+/* */
+
+
+header{
+		height: 200px;
+	  max-height: 200px;
+	  position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.titre {
+  color: White;
+  font-size: 6em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+
+#content{
+  background-image: url(pattern-1.png);/*Couleur de fond*/
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+section{ /*MODIFIE*/
+	widows: 65px;/*Taille de la colonne centrée moins le padding*/
+	min-width: 300px;
+	background-color:#FFFFFF;/*Couleur de fond*/
+	margin : 10px 5% ;/*centrer la colone*/
+	display: inline;
+	align-items: center;
+    border-radius: 20px;
+	
+	
+	animation-name: color_change;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h1{
+  font-size: 20;
+  text-align: center; 
+}
+
+article{  
+	top: 3px;
+	background-color:#FFFFFF;/*Couleur de fond*/
+	margin : 10px 10px;/*centrer la colone*/
+	padding:25px;/*margin interne*/
+	align-items: center;
+    border-radius: 10px;
+
+}
+.droite { 
+width: 300px; 
+height: 300px;
+float: right;
+}
+
+.gauche { 
+width: 300px; 
+height: 300px;
+float: left;
+}
+
+.grand {
+width: 100%; 
+border: 3px black solid;
+}
+
+
+
+aside:hover{
+right: 0px;
+
+}
+
+@media (max-width: 620px) { /*MODIFIE*/
+header > img{
+	min-width: 300px;
+	min-height: 300px;
+}
+ section {
+ width: 93%;
+ min-width: 200px;
+ margin : 10px 5% ;
+ }
+ article > img {
+width: 300px; 
+height: 300px;
+margin: auto;
+display: block
+}
+}
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url("CaviarDreams.ttf") format("truetype");
+}
+
+div {
+    font-family: "CaviarDreams",arial,sans-serif;
+}
+
+/* MODIFIEEEEEEEEEEEEEEEEEEEEEEEE*/
+
+#media{
+right: 10px;
+display: flex;
+position: absolute;
+right: 20 px;
+}
+
+#media > a > img{
+width: 40px; 
+height: 40px;
+padding: 5px;
+}
+#media > a > img:hover{
+width: 50px; 
+height: 50px;
+padding: 0px;
+}
+
+footer{
+	padding:25px 20px;/*Marge verticale*/
+	background-color:black; /*Couleur de fond*/
+	display: block;
+	color: white;
+}
+
+legend {
+  color: black;
+  font-size: 20px;
+}
+
+fieldset{ /*MODIFIE*/
+	width:65%;/*Taille de la colonne centrée moins le padding*/
+    min-width: 300px;
+    background-color: #39CCCC;
+	margin : 10px 5% ;/*centrer la colone*/
+	display: flex;
+	align-items: center;
+      border-radius: 10px;
+      border-color: white;
+      font-family: "CaviarDreams",arial,sans-serif;		
+}
+
+form{
+  background-image: url(pattern-1.png);/*Couleur de fond*/
+  display: flex;
+  flex-direction: column;
+}
+
+#ok {
+  display :inline;
+}
+
+textarea {
+  width : 800px;
+  height : 175px;
+}
+
+
