@@ -154,14 +154,14 @@ article{
 
 }
 .droite { 
-width: 300px; 
-height: 300px;
+width: 25%; 
+height: 25%;
 float: right;
 }
 
 .gauche { 
-width: 300px; 
-height: 300px;
+width: 25%; 
+height: 25%;
 float: left;
 }
 
@@ -176,6 +176,13 @@ height: 50px;
 .grand {
 width: 100%; 
 border: 3px black solid;
+}
+.metier {
+	 display: block;
+	margin-left: auto;
+    margin-right: auto;
+		width: 400px; 
+	height: 400px;
 }
 
 
@@ -199,20 +206,24 @@ margin: auto;
 display: block
 }
 .droite { 
-width: 150px; 
-height: 150px;
+width: 50%; 
+height: 50%;
 float: right;
 }
 
 .equipe { 
-width: 150px; 
-height: 150px;
+width: 50%; 
+height: 50%;
 }
 
 .gauche { 
-width: 150px; 
-height: 150px;
+width: 25%; 
+height: 25%;
 float: left;
+}
+.metier {
+		width: 200px; 
+	height: 200px;
 }
 }
 
