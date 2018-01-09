@@ -21,9 +21,6 @@ nav > #menu{ /*gère la colonne nav > #menu*/
 
 }
 
-.submenu{
-display: hidden;
-} 
 
 nav > #menu ul{ /*Structure du menu sous forme de liste*/
   width:250px;
@@ -168,6 +165,14 @@ height: 300px;
 float: left;
 }
 
+.icon {
+	 display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 50px; 
+height: 50px;
+}
+
 .grand {
 width: 100%; 
 border: 3px black solid;
@@ -175,10 +180,7 @@ border: 3px black solid;
 
 
 
-aside:hover{
-right: 0px;
 
-}
 
 @media (max-width: 620px) { /*MODIFIE*/
 header > img{
@@ -195,6 +197,22 @@ width: 300px;
 height: 300px;
 margin: auto;
 display: block
+}
+.droite { 
+width: 150px; 
+height: 150px;
+float: right;
+}
+
+.equipe { 
+width: 150px; 
+height: 150px;
+}
+
+.gauche { 
+width: 150px; 
+height: 150px;
+float: left;
 }
 }
 
@@ -262,8 +280,44 @@ form{
 }
 
 textarea {
-  width : 800px;
+  width : 80%;
   height : 175px;
 }
+
+.column {
+    float: left;
+    width: 23%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.cadre {
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	background-color: #FFFAFA;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
 
 
