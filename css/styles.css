@@ -124,7 +124,6 @@ body{
 }
 
 section{ /*MODIFIE*/
-	widows: 65px;/*Taille de la colonne centrée moins le padding*/
 	min-width: 300px;
 	background-color:#FFFFFF;/*Couleur de fond*/
 	margin : 10px 5% ;/*centrer la colone*/
@@ -140,7 +139,7 @@ section{ /*MODIFIE*/
 }
 
 h1{
-  font-size: 20;
+  font-size: 20px;
   text-align: center; 
 }
 
@@ -242,7 +241,7 @@ div {
 right: 10px;
 display: flex;
 position: absolute;
-right: 20 px;
+right: 20px;
 }
 
 #media > a > img{
