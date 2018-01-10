@@ -4,15 +4,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>NewTextile Corp - Contact</title>
+		<title>NewTextile Corp - Produits</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="icon" type="image/png" href="icon.png" />
 
 	</head>
-		<header>
+	<body>
+	<header>
 		<img src="img2.jpg" alt="supertshirt" style="width:100%">
 		<div class="titre">Contact</div>
-		</header>
+	</header>
      <div class="wrapper">
 			<input type="checkbox" id="navigation" />
 			<label for="navigation">☰</label>
@@ -64,11 +65,11 @@
 					<p>
 						<label for="gender">Sexe*</label>
 						<input name="gender" value="male" type="radio"> Homme
-						<input name="gender" value="female" type="radio"> Femme
+						<input name="gender2" value="female" type="radio"> Femme
 					</p>
 					<p>
 						<label for="bday">Date de naissance*</label>
-						<input id="bday" name="bday" type="date" required placeholder="JJ/MM/AAAA">
+						<input id="bday" type="date">
 					</p>
 					<p>
 						<label for="email">Email*</label>
@@ -79,19 +80,28 @@
 				<fieldset>
 					<legend>Adresse</legend>
 					<p>
-						<label for="lland">Adresse</label>
+						<label for="adresse">Adresse</label>
 						<input id="adresse" name="adresse" type="text" required placeholder="N°rue,avenue">
 					</p>
 					<p>
 						<label for="lland1">Complément d'adresse</label>
 						<input id="lland1" name="lland1" type="text" required placeholder="Appartement, Rez de chaussé">
-						<input id="lland1" name="lland1" type="text" required placeholder="Batiment, Résidence">
+						<input id="lland2" name="lland2" type="text" required placeholder="Batiment, Résidence">
 					</p>
 					<p>
-						<label for="lland2">Ville</label>
-						<input id="lland2" name="lland2" type="text" required placeholder="Ex : Montpellier">
+						<label for="lland3">Ville</label>
+						<input id="lland3" name="lland3" type="text" required placeholder="Ex : Montpellier">
 					</p>
 					<p>
+<<<<<<< HEAD
+						<label for="lland4">Code Postal</label>
+						<input id="lland4" name="lland4" type="number" required placeholder="Ex : 34090">
+						
+					</p>
+					<p>
+						<label for="lland5">Pays</label>
+						<input id="lland5" name="lland5" type="text" required placeholder="Ex : France"> 
+=======
 						<label for="lland3">Code Postal</label>
 						<input id="lland3" name="lland3" type="number" required placeholder="Ex : 34090">
 
@@ -99,6 +109,7 @@
 					<p>
 						<label for="lland4">Pays</label>
 						<input id="lland4" name="lland4" type="text" required placeholder="Ex : France">
+>>>>>>> 7b765f5e4a30687966a7615b1f4b559eb6e4ff53
 					</p>
 				</fieldset>
 
@@ -118,7 +129,7 @@
 					</p>
 					<p>
 						<label for="rday">Date à laquelle vous voulez être recontacté</label>
-						<input id="rday" name="rday" type="date" required placeholder="JJ/MM/AAAA">
+						<input id="rday" type="date">
 					</p>
 					<p>
 						<textarea>Message pour les développeurs: </textarea>
