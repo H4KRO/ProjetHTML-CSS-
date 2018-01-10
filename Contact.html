@@ -19,35 +19,40 @@
 			<input type="checkbox" id="navigation" />
 			<label for="navigation">☰</label>
 			<nav>
-			<div id="menu">
-				<ul>
-					<li>
-						<a href="Index.html">Produits</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="equipe.html">Equipe</a>
-					</li>
-					<li>
-						<a href="Presse.html">Presse</a>
-					</li>
-					<li>
-						<a href="Rejoindre.html">Rejoindre</a>
-					</li>
-					<li>
-						<a href="FAQ.html">FAQ</a>
-					</li>
-				</ul>
-				</div>
-				
-			</div>
-		</nav>
-		
+<div id="menu">
+	<ul>
+		<li>
+			<a href="Index.html">Produits</a>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+		<li>
+			<a href="equipe.html">Equipe</a>
+		</li>
+		<li>
+			<a href="Presse.html">Presse</a>
+		</li>
+			<li>
+			<a href="Rejoindre.html">Rejoindre</a>
+			<ul>
+				<li><a href="Rejoindre.html#m1">Métier 1</a></li>
+				<li><a href="Rejoindre.html#m2">Métier 2</a></li>
+				<li><a href="Rejoindre.html#m3">Métier 3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="FAQ.html">FAQ</a>
+		</li>
+	</ul>
+	</div>
+
+
+</nav>
+
 		<main>
-			
-			
+
+
 			<form action="sendToMySecondYearInIut.php" method="get">
 				<fieldset>
 					<legend>Civilité</legend>
@@ -73,7 +78,7 @@
 						<input id="email" name="email" type="email" required placeholder="tonmail@mail.com">
 					</p>
 				</fieldset>
-				
+
 				<fieldset>
 					<legend>Adresse</legend>
 					<p>
@@ -92,22 +97,22 @@
 					<p>
 						<label for="lland3">Code Postal</label>
 						<input id="lland3" name="lland3" type="number" required placeholder="Ex : 34090">
-						
+
 					</p>
 					<p>
 						<label for="lland4">Pays</label>
-						<input id="lland4" name="lland4" type="text" required placeholder="Ex : France"> 
+						<input id="lland4" name="lland4" type="text" required placeholder="Ex : France">
 					</p>
 				</fieldset>
-				
-					
+
+
 				<fieldset>
 					<legend>Comment avez-vous entendu parler de nous ?</legend>
-					
+
 					<p>
 						<label for="product">Vous avez entendu parler de nous via</label>
 						<select id="product" >
-							<option value="1">Facebook</option> 
+							<option value="1">Facebook</option>
 							<option value="2">votre entourage</option>
 							<option value="3">des publicités</option>
 							<option value="4">des Blogs</option>
@@ -121,19 +126,19 @@
 					<p>
 						<textarea>Message pour les développeurs: </textarea>
 					</p>
-							
+
 					<p>
 						<input id="ok" type="checkbox" value="required"> J’ai bien lu et accepté les clauses de politique de confidentialité de l'entreprise.
 					</p>
 					<input type="submit" value="Envoyer">
 				</fieldset>
 
-				
-			</form> 
-		
+
+			</form>
+
 
 		</main>
-		
+
 		<footer>
 			<div id="media">
 				<a href="https://www.twitter.com"><img src="twitter.png" alt="PTwitt"/></a>
@@ -141,11 +146,8 @@
 				<a href="https://www.gmail.com"><img src="gmail.png" alt="gmail" /></a>
 			</div>
 			<div id="foot">
-				NewTextile Corporation 2017 all rights reserved 
+				NewTextile Corporation 2017 all rights reserved
 			</div>
 		</footer>
 	</body>
 </html>
-
-
-

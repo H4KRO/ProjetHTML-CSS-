@@ -1,0 +1,100 @@
+	<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>vetements</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+		
+		<main>
+			<form action="sendToMySecondYearInIut.php" method="post">
+				<fieldset>
+					<legend>Informations personnelles</legend>
+					<p>
+						<label for="surname">Nom*</label>
+						<input id="surname" name="uname" type="text" required autofocus>
+					</p>
+					<p>
+						<label for="firstname">Prénom</label>
+						<input id="firstname" name="firstname" type="text">
+					</p>
+					<p>
+						<label for="gender">Sexe</label>
+						<input name="gender" value="male" type="radio"> Homme<br>
+						<input name="gender" value="female" type="radio"> Femme
+					</p>
+					<p>
+						<label for="bday">Date d'anniversaire</label>
+						<input id="bday" name="bday" type="date">
+					</p>
+					<p>
+						<label for="email">Email*</label>
+						<input id="email" name="email" type="email" required placeholder="yourmail@domain.com">
+					</p>
+					<p>
+						<label for="land">Pays d’origine : </label>
+						<select id="land">
+							<option value="us">U.S.A</option> 
+							<option value="fr" selected>France</option>
+							<option value="ch">Chine</option>
+							<option value="vn">Viêt Nem</option>
+							<option value="vn">caca de chameau</option>
+						</select>
+					</p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>les habits</legend>
+					<p>
+						<label for="fighting">types préférés : </label>
+						<select id="fighting" multiple>
+							<option value="kungfu">T Shirt</option> 
+							<option value="karate" selected>Sneakers</option>
+							<option value="fullcontact">sweat</option>
+						</select>
+					</p>
+					<p>
+						<label for="level">ma connaissance en sape sur 100</label>
+						<input id="level" name="level" type="number" min="0" max="100">
+					</p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Inscription</legend>
+					<p>
+						<label for="password">mot de passe*</label>
+						<input id="password" name="password" type="password" required pattern="[a-z0-9A-B]{8,}">
+					</p>
+					<p>
+						<label for="engagement">Niveau d’engagement</label>
+						<input name="engagement" value="basic" type="radio">Free (gratuit)<br>
+						<input name="engagement" value="basic" type="radio">Basique (5 €)<br>
+						<input name="engagement" value="gold" type="radio">Gold (15 €)<br>
+						<input name="engagement" value="tatane" type="radio">diamond (50 €)
+					</p>
+					<p>
+						<label for="message">Message pour les développeurs: </label>
+						
+					</p>
+							
+					<p>
+						<input name="agree" type="checkbox" required>J’ai bien lu les clauses que je n’ai pas lues
+					</p>
+				</fieldset>
+
+				<input type="submit" value="Envoyer">
+			</form>
+		</main>
+		
+		<footer>
+			<a href="#entete">Retour au début</a>
+		</footer>
+	</body>
+</html>
+
+
+
